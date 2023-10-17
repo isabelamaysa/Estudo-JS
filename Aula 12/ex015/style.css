@@ -1,11 +1,11 @@
 *{
     margin: 0px;
     padding: 0px;
-    color: white;
+    color: black;
 }
 body{
     background-color:rgb(0, 170, 255);
-    text-align: center;
+    
 }
 
 header{
@@ -15,6 +15,7 @@ header{
 
 h1{
     text-shadow: 2px 1px 3px black;
+    color: aliceblue;
 }
 
 section{
@@ -27,12 +28,16 @@ section{
     box-shadow: 1px 1px 2px black;
 }
 
-section > div {
-    color: black;
-    
+div > p {
+    margin: 10px;
 }
+
 
 footer{
     text-align: center;
     text-shadow: 1px 1px 3px black;
+}
+
+footer > p {
+    color: aliceblue;
 }
