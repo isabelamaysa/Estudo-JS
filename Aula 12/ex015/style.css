@@ -32,7 +32,6 @@ div > p {
     margin: 10px;
 }
 
-
 footer{
     text-align: center;
     text-shadow: 1px 1px 3px black;
@@ -40,4 +39,10 @@ footer{
 
 footer > p {
     color: aliceblue;
+}
+
+img#foto {
+    display: block;
+    margin: auto;
+    padding: 10px;
 }
