@@ -3,16 +3,16 @@ var lista = document.querySelector('select#flista')
 var res = document.querySelector('div#res')
 var valores = []
 
-function isNumero(n) {
+function isNumero(n) { //pq "is"?
     if(Number(n) >= 1 && Number(n) <= 100) {
         return true
     } else {
         return false
-    }
+    } 
 }
 
-function inLista(n, l) {
-    if (l.indexOf(Number(n)) != -1) {
+function inLista(n, l) { // pq 'n' e 'l'?
+    if (l.indexOf(Number(n)) != -1) { //pq indexOf? / "!=" = se não for igual a -1
         return true
     } else {
         return false
@@ -20,24 +20,24 @@ function inLista(n, l) {
 }
 
 function adicionar() {
-    if(isNumero(num.value) && !inLista(num.value, valores)) {
-        valores.push(Number(num.value))
-        var item = document.createElement('option')
+    if(isNumero(num.value) && !inLista(num.value, valores)) { // "!inLista" = se não estiver na lista
+        valores.push(Number(num.value)) // "push" = adicionar um elemento no vetor, add o Number q é o num.value
+        var item = document.createElement('option') //criando um elemento, o Option
         item.text = `Valor ${num.value} adicionado.`
-        lista.appendChild(item)
+        lista.appendChild(item) // add a lista?
         res.innerHTML = ''
     } else {
         window.alert('Valor inválido ou já encontrado na Lista')
     }
-    num.value = ''
-    num.focus()
+    num.value = '' // para q ele sempre retorne vazio
+    num.focus() //para q o foco seja no input "num"
 }
 
 function finalizar() {
     if(valores.length == 0) {
         window.alert('Adicione valores antes de finalizar!')
     } else {
-        let tot = valores.length
+        let tot = valores.length //mostrar valor total de elementos
         let maior = valores[0]
         let menor = valores[0]
         let soma = 0

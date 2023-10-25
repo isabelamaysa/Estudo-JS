@@ -8,14 +8,14 @@ function tabuada() {
         var c = 1
         tab.innerHTML = ''
         while (c <= 10) {
-            var item = document.createElement('option')
-            item.text = `${n} x ${c} = ${n*c}`
+            var item = document.createElement('option') // adicionado o elemento "option"
+            item.text = `${n} x ${c} = ${n*c}` // "text" = o texto q ira aparecer dentro de option
             item.value = `tab${c}`
             tab.appendChild(item)
             c++
         }
     }
-        
+        //explicar melhor
 
 }
  
