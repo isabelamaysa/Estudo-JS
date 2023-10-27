@@ -1,0 +1,71 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="style.css">
+    <title>Exercicio 2</title>
+</head>
+<body>
+    <header>
+        <h1>Calculo de Média</h1>
+    </header>
+    <section>
+        <div>
+            Insira seu nome e sua nota de cada prova e veja se foi aprovado ou não.
+            <br><br>
+            <fieldset id="dados">
+                <legend> <strong>Dados do Aluno</strong> </legend>
+                <br>
+                <label for="inome">Insira seu nome: </label>
+                <input type="text" name="inome" id="inome" placeholder="Nome completo">
+                
+                <br> <br>
+                <label for="iturma">Qual sua Turma: </label>
+                <input type="text" name="iturma" id="iturma" placeholder="ex: 8º">
+                <label for="iano">Ano: </label>
+                <input type="number" name="iano" id="iano" placeholder="ex: 2023">
+                <br> <br>
+            </fieldset>
+            <br>
+            <fieldset id="notas">
+                <legend><strong>Notas</strong></legend>
+                <br>
+                <label for="iport1">Português Nota P1: </label>
+                <input type="number" name="iport1" id="iport1">
+                <label for="iport2">Nota P2: </label>
+                <input type="number" name="iport2" id="iport2">
+
+                <br><br>
+                <label for="imat1">Matemática Nota P1: </label>
+                <input type="number" name="imat1" id="imat1">
+                <label for="imat2">Nota P2: </label>
+                <input type="number" name="imat2" id="imat2">
+
+                <br><br>
+                <label for="ihist1">História Nota P1: </label>
+                <input type="number" name="ihist1" id="ihist1">
+                <label for="ihist2">Nota P2: </label>
+                <input type="number" name="ihist2" id="ihist2">
+
+                <br><br>
+                <label for="igeo1">Geografia Nota P1: </label>
+                <input type="number" name="igeo1" id="igeo1"> 
+                <label for="igeo2">Nota P2: </label>
+                <input type="number" name="igeo2" id="igeo2">
+                <br> <br>
+            </fieldset>
+            <br>
+            <input type="button" value=" Enviar Notas " onclick="enviar()">
+        </div>
+        <br>
+        <div id="res">
+            Aguarde que logo saira se você foi aprovado ou não!
+        </div>
+    </section>
+    <footer>
+        <p>&copy; CursoemVídeo</p>
+    </footer>
+    <script src="script.js"> </script>
+</body>
+</html>
